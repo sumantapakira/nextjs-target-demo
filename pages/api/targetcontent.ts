@@ -2,12 +2,12 @@ import type { NextApiRequest, NextApiResponse } from 'next'
 import getTargetResponse from '../../services/target-service';
 const TargetNodeClient  = require("@adobe/target-node-client");
 const CONFIG = {
-    client: "epam",
-    host: "mwtestus.tt.omtrdc.net",
+    client: "clientid",
+    host: "yourhost",
     secure: true,
     timeout: 10000,
     debug: true,
-    organizationId: '36DE898555D732137F000101@AdobeOrg'
+    organizationId: 'yourorgid@AdobeOrg'
   };
   const client = TargetNodeClient.create({config: CONFIG});
 
